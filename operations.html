@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Validation</title>
+</head>
+<body>
+
+<p>Please input a number between 1 and 10:</p>
+<form>
+    <input id="inputNumber" type="text">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="result"></p>
+</form>
+<script>
+    function myFunction() {
+        var x, text;
+        //Get the value of input field with id="numb"
+        x = document.getElementById("inputNumber").value;
+        // If x is Not a Number or less than one or greater than 10
+        if (<!-- Update this condition -->) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("result").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>
